@@ -82,7 +82,7 @@ app.put('/image', (req, res) => {
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     
-    console.log(`app is running on port ${PORT}`)
+    console.log(`app is running on port ${process.env.PORT}`)
 })
 
 /*
