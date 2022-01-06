@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json())
 
-app.get("/", (req, res) => {   res.send(database.users); });
+app.get("/", (req, res) => {   res.send('its working'); });
 
 app.post('/signin', (req,res) => { 
     db.select('email', 'hash').from('login')
